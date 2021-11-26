@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 4.8.1 mingw32 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -fno-common -fmessage-length=0 -Wall -fno-strict-aliasing -fno-rtti -fno-exceptions -ffunction-sections -fdata-sections -std=c++11 -c -DTARGET_M4 -DTARGET_FF_ARDUINO -DTOOLCHAIN_GCC_ARM -DTOOLCHAIN_GCC -DTARGET_RTOS_M4_M7 -DTARGET_FF_MORPHO -DTARGET_LIKE_MBED -DTARGET_CORTEX_M -D__FPU_PRESENT=1 -DTARGET_LIKE_CORTEX_M4 -DTARGET_NUCLEO_F446RE -DMBED_BUILD_TIMESTAMP=1458562168.44 -DTARGET_STM -D__MBED__=1 -DTARGET_STM32F446RE -DTARGET_STM32F4 -D__CORTEX_M4 -DARM_MATH_CM4 -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed\target_nucleo_f446re\target_stm -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed\target_nucleo_f446re\target_stm\target_stm32f4 -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\lib -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017 -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed\target_nucleo_f446re -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed\target_nucleo_f446re\target_stm\target_stm32f4\TARGET_NUCLEO_F446RE -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed\target_nucleo_f446re\TOOLCHAIN_GCC_ARM -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\pingg\Ping -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\pingg -IE:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\16 Mei 2017\mbed">
+      <target file="ObjectVariabel.o" lastModified="15c1c742828">
+         <source file="..\..\..\lib\ObjectVariabel.cpp" lastModified="15c0d4d10a6"/>
+      </target>
+      <target file="Garis.o" lastModified="15c1c7442a5">
+         <source file="..\..\..\lib\Garis.cpp" lastModified="15ba06df557"/>
+      </target>
+      <target file="Display.o" lastModified="15c1c741ea2">
+         <source file="..\..\..\lib\Display.cpp" lastModified="15c01ffd1a2"/>
+      </target>
+      <target file="Ping.o" lastModified="15c1c7420c5">
+         <source file="..\..\..\pingg\Ping\Ping.cpp" lastModified="15b475a54d0"/>
+      </target>
+      <target file="Backhome.o" lastModified="15c1c742a4b">
+         <source file="..\..\..\lib\Backhome.cpp" lastModified="15bfcfa82d9"/>
+      </target>
+      <target file="AX12.o" lastModified="15c1c74444b">
+         <source file="..\..\..\lib\AX12.cpp" lastModified="15b4dc0d9c0"/>
+      </target>
+      <target file="Infrared.o" lastModified="15c1c742c5e">
+         <source file="..\..\..\lib\Infrared.cpp" lastModified="15a5198d170"/>
+      </target>
+      <target file="Jelajah.o" lastModified="15c1c743ff6">
+         <source file="..\..\..\lib\Jelajah.cpp" lastModified="15c1c683627"/>
+      </target>
+      <target file="TPA81.o" lastModified="15c1c74318e">
+         <source file="..\..\..\lib\TPA81.cpp" lastModified="15448702630"/>
+      </target>
+      <target file="InversKinematic.o" lastModified="15c1c7438a3">
+         <source file="..\..\..\lib\InversKinematic.cpp" lastModified="15bd943b446"/>
+      </target>
+      <target file="Gerakan.o" lastModified="15c1c7425d6">
+         <source file="..\..\..\lib\Gerakan.cpp" lastModified="15c0ce9ff02"/>
+      </target>
+      <target file="Uvtron.o" lastModified="15c1c741fac">
+         <source file="..\..\..\lib\Uvtron.cpp" lastModified="15448701690"/>
+      </target>
+      <target file="wallfollowing.o" lastModified="15c1c743bcf">
+         <source file="..\..\..\lib\wallfollowing.cpp" lastModified="15c0cdde8d6"/>
+      </target>
+      <target file="main.o" lastModified="15c1c742346">
+         <source file="..\..\..\main.cpp" lastModified="15c1c741982"/>
+      </target>
+      <target file="padamkanapi.o" lastModified="15c1c7430b3">
+         <source file="..\..\..\lib\padamkanapi.cpp" lastModified="15c1c727bfc"/>
+      </target>
+      <target file="TextLCD.o" lastModified="15c1c742d58">
+         <source file="..\..\..\lib\TextLCD.cpp" lastModified="15448702e00"/>
+      </target>
+      <target file="CMPS10.o" lastModified="15c1c7433ef">
+         <source file="..\..\..\lib\CMPS10.cpp" lastModified="15bb499d9d1"/>
+      </target>
+   </processor>
+</history>

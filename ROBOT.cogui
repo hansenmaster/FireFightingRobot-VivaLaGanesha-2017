@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window>
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar/>
+<page aggregateWorkingSetId="Aggregate for window 1475295018004" focus="true" label="Workspace - CooCox CoBuilder">
+<editors>
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@114a258">
+<info part="org.eclipse.ui.internal.EditorStack@114a258">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="2"/>
+<part id="5"/>
+<part id="4"/>
+<part id="1"/>
+<part id="3"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/main.cpp" title="main.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/main.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5588" selectionTopPixel="2934"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ObjectVariabel.h" partName="ObjectVariabel.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/ObjectVariabel.h" title="ObjectVariabel.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/ObjectVariabel.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/ObjectVariabel.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6180" selectionTopPixel="3400"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Jelajah.cpp" partName="Jelajah.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Jelajah.cpp" title="Jelajah.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Jelajah.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Jelajah.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="20319" selectionTopPixel="14842"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ObjectVariabel.cpp" partName="ObjectVariabel.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/ObjectVariabel.cpp" title="ObjectVariabel.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/ObjectVariabel.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/ObjectVariabel.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="3377" selectionTopPixel="771"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="padamkanapi.cpp" partName="padamkanapi.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/padamkanapi.cpp" title="padamkanapi.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/padamkanapi.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/padamkanapi.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="24" selectionOffset="39618" selectionTopPixel="31042"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Gerakan.cpp" partName="Gerakan.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Gerakan.cpp" title="Gerakan.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Gerakan.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Gerakan.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="2013" selectionTopPixel="1598"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Infrared.h" partName="Infrared.h" path="E:/Documents/KULIAH/MATERI/UNIT/URO/Pemrograman/10 Mei 2017/lib/Infrared.h" title="Infrared.h" tooltip="E:/Documents/KULIAH/MATERI/UNIT/URO/Pemrograman/10 Mei 2017/lib/Infrared.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/Infrared.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Gerakan.h" partName="Gerakan.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/Gerakan.h" title="Gerakan.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/Gerakan.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/Gerakan.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="187" selectionTopPixel="35"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Ping.cpp" partName="Ping.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/pingg/Ping/Ping.cpp" title="Ping.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/pingg/Ping/Ping.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Ping.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="wallfollowing.cpp" partName="wallfollowing.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/wallfollowing.cpp" title="wallfollowing.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/wallfollowing.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/wallfollowing.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="5372" selectionTopPixel="3249"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="padamkanapi.h" partName="padamkanapi.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/padamkanapi.h" title="padamkanapi.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/padamkanapi.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/padamkanapi.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="591" selectionTopPixel="306"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="backhome.cpp" partName="backhome.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Backhome.cpp" title="backhome.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Backhome.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/backhome.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="7379" selectionTopPixel="6477"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Display.cpp" partName="Display.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Display.cpp" title="Display.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Display.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Display.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3651" selectionTopPixel="3077"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Garis.cpp" partName="Garis.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Garis.cpp" title="Garis.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Garis.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Garis.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="1418" selectionTopPixel="748"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Ping.h" partName="Ping.h" title="Ping.h" tooltip="E:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\14 Mei 2017\lib\Ping.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="E:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\14 Mei 2017\lib\Ping.h" project="ROBOT"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="AX12.h" partName="AX12.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/14 Mei 2017/lib/AX12.h" title="AX12.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/14 Mei 2017/lib/AX12.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/AX12.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="840"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TextLCD.h" partName="TextLCD.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/TextLCD.h" title="TextLCD.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/TextLCD.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/TextLCD.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="wallfollowing.h" partName="wallfollowing.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/wallfollowing.h" title="wallfollowing.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/wallfollowing.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/wallfollowing.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TPA81.cpp" partName="TPA81.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/TPA81.cpp" title="TPA81.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/TPA81.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/TPA81.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="InversKinematic.cpp" partName="InversKinematic.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/InversKinematic.cpp" title="InversKinematic.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/InversKinematic.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/InversKinematic.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="InversKinematic.h" partName="InversKinematic.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/InversKinematic.h" title="InversKinematic.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/InversKinematic.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/InversKinematic.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Uvtron.cpp" partName="Uvtron.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Uvtron.cpp" title="Uvtron.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Uvtron.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Uvtron.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="223" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Infrared.cpp" partName="Infrared.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Infrared.cpp" title="Infrared.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/Infrared.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/Infrared.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Jelajah.h" partName="Jelajah.h" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/Jelajah.h" title="Jelajah.h" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/15 Mei 2017/lib/Jelajah.h" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/headers/LIB/Jelajah.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2145" selectionTopPixel="1110"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CMPS10.cpp" partName="CMPS10.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/CMPS10.cpp" title="CMPS10.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/CMPS10.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/CMPS10.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="695" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TextLCD.cpp" partName="TextLCD.cpp" path="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/TextLCD.cpp" title="TextLCD.cpp" tooltip="E:/pelajaran hansen/ITB/URO/Berkaki/2017/Program/16 Mei 2017/lib/TextLCD.cpp" workbook="org.eclipse.ui.internal.EditorStack@114a258">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ROBOT/sources/LIB/TextLCD.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
+<view id="org.coocox.component.ui.ComponentView" partName="Components">
+<viewState/>
+</view>
+<view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="18">
+<expanded>
+<element path="/ROBOT"/>
+<element path="/ROBOT/headers"/>
+<element path="/ROBOT/headers/LIB"/>
+<element path="/ROBOT/sources"/>
+<element path="/ROBOT/sources/LIB"/>
+</expanded>
+<selection>
+<element path="/ROBOT/sources/LIB/Gerakan.cpp"/>
+</selection>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showExpressionsAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showDebugAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showConsoleAction"/>
+<hide_menu_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryBrowserAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showVariablesAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openProjectExplorerAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showRegistersAction"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@2ffbfc" orientation="256" selectedTabId="org.coocox.component.ui.ComponentView" style="0">
+<fastViews>
+<view id="org.coocox.component.ui.ComponentView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2ffbfc">
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2ffbfc">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@186e192" ratio="0.69648564" ratioLeft="436" ratioRight="190" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2ffbfc">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.21009035" ratioLeft="279" ratioRight="1049" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2ffbfc"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d6722c" ratio="0.7428298" ratioLeft="777" ratioRight="269" relationship="2" relative="org.coocox.builder.ui.exampleView">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
+<page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4499205" ratioLeft="283" ratioRight="346" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4868c5" ratio="0.3688394" ratioLeft="232" ratioRight="397" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2ffbfc">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.codebugger.configuration.ui.Perspective" id="org.coocox.codebugger.configuration.perspective" label="CoDebugger"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFolder"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_menu_item_id id="org.eclipse.ui.file.save"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAll"/>
+<hide_menu_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openFile"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAs"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.projectMenu"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.flashMenu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.debug"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_menu_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.build"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_menu_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.TargetManageAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newProject"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_toolbar_item_id id="org.eclipse.ui.file.save"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideFlashEraseAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.debug"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars>&#x0A;<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@16d1df5" orientation="256" selectedTabId="org.coocox.codebugger.trace.ui.traceview" style="0">&#x0A;<fastViews>&#x0A;<view id="org.coocox.codebugger.trace.ui.traceview" ratio="0.3"/>
+<view id="org.eclipse.debug.ui.VariableView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b4e09f">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1b4e09f">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5b7085" ratio="0.841853" ratioLeft="527" ratioRight="99" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1b4e09f">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@16d1df5" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5b7085">&#x0A;<folder appearance="2" expanded="0">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.VariableView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ef6195" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1b4e09f">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.1904059" ratioLeft="258" ratioRight="1097" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1b4e09f"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/padamkanapi.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/Jelajah.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/backhome.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/Display.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/InversKinematic.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ROBOT/sources/LIB/Gerakan.cpp"/>
+</editors>
+<item historyLabel="Jelajah.cpp" index="2">
+<position info="not_deleted" x="20319" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="3836" y="12"/>
+</item>
+<item historyLabel="Jelajah.cpp" index="2">
+<position info="not_deleted" x="20319" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="43658" y="6"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4085" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41439" y="14"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4084" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41446" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4086" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41458" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4067" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41438" y="20"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4289" y="0"/>
+</item>
+<item historyLabel="backhome.cpp" index="3">
+<position info="not_deleted" x="7379" y="8"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4087" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41439" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4087" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41439" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="39621" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4067" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="39621" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41438" y="20"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="4096" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="41438" y="20"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="39618" y="24"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="5589" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="8078" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="1788" y="0"/>
+</item>
+<item historyLabel="InversKinematic.cpp" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="padamkanapi.cpp" index="0">
+<position info="not_deleted" x="39618" y="24"/>
+</item>
+<item historyLabel="main.cpp" index="1">
+<position info="not_deleted" x="5588" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7715" y="15"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="8055" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="4403" y="14"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="4519" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7715" y="15"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7983" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="4577" y="16"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7649" y="13"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7715" y="15"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="7940" y="0"/>
+</item>
+<item historyLabel="Display.cpp" index="4">
+<position info="not_deleted" x="3651" y="0"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="3148" y="0"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="7120" y="19"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="5418" y="18"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="7120" y="19"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="5418" y="18"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="4790" y="15"/>
+</item>
+<item historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="3728" y="28"/>
+</item>
+<item active="true" historyLabel="Gerakan.cpp" index="6">
+<position info="not_deleted" x="1859" y="22"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TextLCD.cpp" tooltip="ROBOT/sources/LIB/TextLCD.cpp">
+<persistable path="/ROBOT/sources/LIB/TextLCD.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CMPS10.cpp" tooltip="ROBOT/sources/LIB/CMPS10.cpp">
+<persistable path="/ROBOT/sources/LIB/CMPS10.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Jelajah.h" tooltip="ROBOT/headers/LIB/Jelajah.h">
+<persistable path="/ROBOT/headers/LIB/Jelajah.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Infrared.cpp" tooltip="ROBOT/sources/LIB/Infrared.cpp">
+<persistable path="/ROBOT/sources/LIB/Infrared.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Uvtron.cpp" tooltip="ROBOT/sources/LIB/Uvtron.cpp">
+<persistable path="/ROBOT/sources/LIB/Uvtron.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="InversKinematic.h" tooltip="ROBOT/headers/LIB/InversKinematic.h">
+<persistable path="/ROBOT/headers/LIB/InversKinematic.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="InversKinematic.cpp" tooltip="ROBOT/sources/LIB/InversKinematic.cpp">
+<persistable path="/ROBOT/sources/LIB/InversKinematic.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CMPS10.h" tooltip="ROBOT/headers/LIB/CMPS10.h">
+<persistable path="/ROBOT/headers/LIB/CMPS10.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="AX12.h" tooltip="ROBOT/headers/LIB/AX12.h">
+<persistable path="/ROBOT/headers/LIB/AX12.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Ping.h" tooltip="E:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\14 Mei 2017\lib\Ping.h">
+<persistable path="E:\pelajaran hansen\ITB\URO\Berkaki\2017\Program\14 Mei 2017\lib\Ping.h" project="ROBOT"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Garis.cpp" tooltip="ROBOT/sources/LIB/Garis.cpp">
+<persistable path="/ROBOT/sources/LIB/Garis.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Display.cpp" tooltip="ROBOT/sources/LIB/Display.cpp">
+<persistable path="/ROBOT/sources/LIB/Display.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="backhome.cpp" tooltip="ROBOT/sources/LIB/backhome.cpp">
+<persistable path="/ROBOT/sources/LIB/backhome.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Gerakan.cpp" tooltip="ROBOT/sources/LIB/Gerakan.cpp">
+<persistable path="/ROBOT/sources/LIB/Gerakan.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ObjectVariabel.cpp" tooltip="ROBOT/sources/LIB/ObjectVariabel.cpp">
+<persistable path="/ROBOT/sources/LIB/ObjectVariabel.cpp"/>
+</file>
+</mruList>
+</workbench>

@@ -1,0 +1,1376 @@
+// Bismillah
+// Jagalah Kebersihan dan kerapihan codingan
+// File name : padamkanapi.cpp
+// author/editor : Babang
+// created on : 28 Maret 2016
+// Desc : Algoritma inti, prosedur pemadaman api di setiap ruangan
+
+#include "padamkanapi.h"
+
+//void GetArah(int THRESHOLD){ //x adalah total garis dilalui //masih perlu cari konstanta jauh, dekat yang tepat
+//    int sudut =kompas.readBearing();
+////    int barat =2700;
+////    int utara =1800;
+////    int selatan=0;
+////    int timur=900;
+////    int toleransi =150;
+//    if (sudut < THTimur + THRESHOLD && sudut > THTimur - THRESHOLD) //menghadap timur
+//    {
+//        ARAH=TIMUR;
+//    }
+//    else if (sudut < THBarat + THRESHOLD && sudut > THBarat - THRESHOLD)//menghadap barat
+//    {
+//        ARAH=BARAT;
+//    }
+//    else if (sudut < THUtara + THRESHOLD && sudut > THUtara - THRESHOLD)//menghadap utara
+//    {
+//    	ARAH=UTARA;
+//    }
+//    else if (sudut < THSelatan + THRESHOLD  || sudut > 3600 + THSelatan -THRESHOLD)//menghadap selatan
+//    {
+//    	ARAH=SELATAN;
+//    }
+//}
+
+void GetArah(int THRESHOLD){ //x adalah total garis dilalui //masih perlu cari konstanta jauh, dekat yang tepat
+    int toleransi=0;
+	int sudut =kompas.readBearing()+toleransi;
+	if(sudut>3599){
+		sudut=sudut-3599;
+	}
+	else if(sudut<0){
+		sudut+=3599;
+	}
+//    int barat =2700;
+//    int utara =1800;
+//    int selatan=0;
+//    int timur=900;
+//    int toleransi =150;
+    if (sudut < THTimur + THRESHOLD && sudut > THTimur - THRESHOLD) //menghadap timur
+    {
+        ARAH=TIMUR;
+    }
+    else if (sudut < THBarat + THRESHOLD && sudut > THBarat - THRESHOLD)//menghadap barat
+    {
+        ARAH=BARAT;
+    }
+    else if (sudut < THSelatan + THRESHOLD  && sudut > THSelatan - THRESHOLD)//menghadap selatan
+	{
+		ARAH=SELATAN;
+	}
+    else if (sudut < (THUtara + THRESHOLD) % 3600 || sudut > (THUtara - THRESHOLD + 3600) % 3600)//menghadap utara
+    {
+    	ARAH=UTARA;
+    }
+
+}
+
+
+
+int NilaiApiTengah() {
+	int temp_total = 0, n = 0;
+	for (int i = 6; i <= 8; ++i) {
+		temp_total += tpa_4.getTemp(i);
+		n++;
+	}
+	for (int i = 6; i <= 8; ++i) {
+		temp_total += tpa_6.getTemp(i);
+		n++;
+	}
+	return temp_total / n;
+}
+
+int NilaiApiTengahKiri() {
+	int temp_total = 0, n = 0;
+	for (int i = 6; i <= 8; ++i) {
+		temp_total += tpa_4.getTemp(i);
+		n++;
+	}
+	return temp_total / n;
+}
+
+int NilaiApiTengahKanan() {
+	int temp_total = 0, n = 0;
+	for (int i = 6; i <= 8; ++i) {
+		temp_total += tpa_6.getTemp(i);
+		n++;
+	}
+	return temp_total / n;
+}
+int NilaiApiKiri() {
+	int temp_total = 0, n = 0;
+	for (int i = 1; i <= 5; ++i) {
+		temp_total += tpa_4.getTemp(i);
+		n++;
+	}
+	return temp_total / n;
+}
+
+int NilaiApiKanan() {
+	int temp_total = 0, n = 0;
+	for (int i = 1; i <= 5; ++i) {
+		temp_total += tpa_6.getTemp(i);
+		n++;
+	}
+	return temp_total / n;
+}
+
+bool ApiSekitar(int TempTH) {
+	bool ada_api = false;
+	for (int i = 1; i <= 8 && !ada_api; ++i)
+		ada_api |= (tpa_4.getTemp(i) > TempTH);
+	for (int i = 1; i <= 8 && !ada_api; ++i)
+		ada_api |= (tpa_6.getTemp(i) > TempTH);
+	return ada_api;
+}
+
+bool ApiSekitarTengah(int TempTH) {
+	//memeriksa api di daerah tpa 6 & 4 (tengah)
+	bool ada_api = false;
+	for (int i = 6; i <= 8 && !ada_api; ++i)
+		ada_api |= (tpa_6.getTemp(i) > TempTH);
+	for (int i = 6; i <= 8 && !ada_api; ++i)
+		ada_api |= (tpa_4.getTemp(i) > TempTH);
+	return ada_api;
+}
+
+//void DekatiApi(int TempTH)
+//{
+//	bool arah;
+//	if(JarakKanan<JarakKiri)
+//	{
+//		arah = 0;//kanan
+//	}else {
+//		arah = 1;//kiri
+//	}
+//}
+
+//void putarkeApi(int temp_th) {
+	// Kanan positif, kiri negatif
+	// Kanan true, kiri false
+//	int count = 0;	// Count sudah ke kiri/kanan brp kali
+//	bool arah_gerak, arah_wall;
+//	int batas_kanan, batas_kiri;
+
+	//pilih arah_gerak
+//	arah_wall = (JarakKanan < JarakKiri);
+//	arah_gerak = arah_wall;
+//	if (arah_wall){	// Kanan
+//		batas_kanan = 8;
+//		batas_kiri = -1;
+//	} else {	// Kiri
+//		batas_kanan = 1;
+//		batas_kiri = -8;
+//	}
+//
+//	do {
+//		//di ujung kiri/kanan
+//		if((count == batas_kanan) || (count == batas_kiri)) {
+//			arah_gerak = !arah_gerak;
+//			// Geser batas
+//			if (count == batas_kanan && arah_wall) {	// Wall kanan, ujung kanan
+//				batas_kanan++;
+//			} else if (count == batas_kiri && arah_wall) {	// Wall kanan, ujung kiri
+//				PutarKanan(50);
+//				wait(0.2);
+//				count++;
+//				batas_kiri++;
+//			} else if (count == batas_kanan && !arah_wall) {	// Wall kiri, ujung kanan
+//				PutarKiri(50);
+//				wait(0.2);
+//				count--;
+//				batas_kanan--;
+//			} else {	// Wall kiri, ujung kiri
+//				batas_kiri--;
+//			}
+//		}
+//
+//		//setiap selesai kiri +kanan , maju wallKanan
+//		if (ApiSekitarTengah(70)){
+//			if (arah_wall){
+//				DisplayLCD("Wall Kanan");
+//				wallKananApi(11,25,10);
+//			} else {
+//				DisplayLCD("Wall Kiri");
+//				MajuLurus(25);
+//				//wallKiriApi(11,25,10);
+//			}
+//			wait(0.4);
+//			count = 0;
+//			arah_gerak = arah_wall;
+//		}
+//		QuickStop();
+//		wait(0.2);
+//
+//		//putar kiri/kanan
+//		if (arah_gerak){
+//			PutarKanan(50);
+//			count++;
+//		} else {
+//			PutarKiri(50);
+//			count--;
+//		}
+//		wait(0.2);
+//	} while (!ApiSekitarTengah(temp_th));
+//}
+
+//void putarkeApi(int TempTH)
+//{
+//	int cnt=0;
+//	bool arah;
+//	//pilih arah
+//	if(JarakKanan<JarakKiri){
+//		arah = 0;//kanan
+//	}else {
+//		arah = 1;//kiri
+//	}
+//	int cntkk=0;
+//	do{
+//		//di ujung kiri/kanan
+//		if((cnt==8)||(cnt==(-1))){
+//			arah = !arah;
+//			cntkk++;
+//		}
+//		//setiap selesai kiri +kanan , maju wallKanan
+//		if((cntkk%2==0)&&(cntkk!=0)){
+//			wallKananApi(13,25,10);
+//			wait(0.5);
+//			cntkk=0;
+//		}
+//		QuickStop();
+//		wait(0.2);
+//		//putar kiri/kanan
+//		if(!arah){
+//			PutarKanan(50);
+//			wait(0.1);
+//			cnt++;
+//		}else{
+//			PutarKiri(50);
+//			wait(0.1);
+//			cnt--;
+//		}
+//		wait(0.1);
+//	}while(!ApiSekitarTengah(TempTH));
+//}
+void putarkeApi(int TempTH)
+{
+	int cnt=0;
+	int a,b;
+	bool arah;
+	bool kaki;
+	//pilih arah
+	if(JarakKanan<JarakKiri){
+		arah = 0;//kanan
+		a=8;b=-1;
+		kaki = 1;
+	}else {
+		arah = 1;//kiri
+		a=1;b=-8;
+		kaki = 0;
+	}
+	int cntkk=0;
+	do{
+		//di ujung kiri/kanan
+		if((cnt==a)||(cnt==b))
+		{
+			arah = !arah;
+			//cntkk++;
+		}
+		if(ApiSekitarTengah(70))
+		{
+			cntkk+=2;
+		}
+		//setiap selesai kiri +kanan , maju wallKanan
+		if((cntkk%2==0)&&(cntkk!=0)){
+			if(kaki){
+			DisplayLCD("Wall Kanan");
+			wallKananApi(11,25,10);
+			wait(0.4);
+			}
+			if(!(kaki)){
+			DisplayLCD("Wall Kiri");
+			wallKiriApi(11,25,10);
+			wait(0.4);
+			}
+			cntkk=0;
+			cnt =0;
+			arah =0;
+		}
+		QuickStop();
+		wait(0.2);
+		//putar kiri/kanan
+		if(!arah){
+			PutarKanan(50);
+			wait(0.1);
+			cnt++;
+		}else{
+			PutarKiri(50);
+			wait(0.1);
+			cnt--;
+		}
+		wait(0.1);
+	}while(!ApiSekitarTengah(TempTH));
+}
+
+void putarkeApiCoba(int TempTH)
+{
+	int cnt=0;
+	int a,b;
+	bool arah;
+	bool kaki;
+	bool sudah = 0;
+	//pilih arah
+	if(JarakKanan<JarakKiri){
+		arah = 0;//kanan
+		a=8;b=-1;
+		kaki = 1;
+	}else {
+		arah = 1;//kiri
+		a=1;b=-8;
+		kaki = 0;
+	}
+	int cntkk=0;
+	do{
+		//di ujung kiri/kanan
+		if((cnt==a)||(cnt==b))
+		{
+			arah = !arah;
+			//cntkk++;
+		}
+		if(ApiSekitarTengah(70))
+		{
+			cntkk+=2;
+		}
+		//setiap selesai kiri +kanan , maju wallKanan
+		if((cntkk%2==0)&&(cntkk!=0)){
+			MajuLurus(20);
+			wait(0.4);
+			cntkk=1;
+			cnt =0;
+			arah =0;
+		}
+		QuickStop();
+		wait(0.2);
+		if(cntkk==0){
+			//putar kiri/kanan
+			if(!arah){
+				PutarKanan(50);
+				wait(0.1);
+				cnt++;
+			}else{
+				PutarKiri(50);
+				wait(0.1);
+				cnt--;
+			}
+			wait(0.1);
+		}
+	}
+	while(cntkk!=1);
+
+	do{
+		if(cntkk==1){
+			int t_tengah = NilaiApiTengah();
+			int t_kiri = NilaiApiKiri();
+			int t_kanan = NilaiApiKanan();
+
+			if (t_tengah > t_kiri && t_tengah > t_kanan) {
+
+					MajuLurus(15);
+					wait(0.2);
+			} else if (t_kiri > t_tengah && t_kiri > t_kanan) {
+				PutarKiri(30);
+			} else {
+				PutarKanan(30);
+			}
+			wait(0.1);
+		}
+	}while(!ApiSekitarTengah(TempTH));
+}
+char ApiSekitar2(int TempTH){
+	//int TempTH=50;
+	if(tpa_0.getTemp(2)>TempTH||tpa_0.getTemp(3)>TempTH||tpa_0.getTemp(4)>TempTH||tpa_0.getTemp(5)>TempTH||tpa_0.getTemp(6)>TempTH||tpa_0.getTemp(7)>TempTH)
+	{
+		return 1;
+	}
+	else if(tpa_2.getTemp(1)>TempTH||tpa_2.getTemp(2)>TempTH||tpa_2.getTemp(3)>TempTH||tpa_2.getTemp(4)>TempTH||tpa_2.getTemp(5)>TempTH||tpa_2.getTemp(6)>TempTH||tpa_2.getTemp(7)>TempTH||tpa_2.getTemp(8)>TempTH)
+	{
+		return 1;
+	}
+	else {
+		return 0;
+		}
+}
+
+
+void PutarApi(int Nkiri, int Nkanan)
+{
+	while(ApiTengah()==0)
+	{
+		for(int i=0;i<Nkiri;i++)
+		{
+			PutarKiri(120);
+			wait(0.1);
+			if(ApiTengah()==1){
+				break;
+			}
+
+		}
+		for(int i=0;i<Nkanan;i++)
+		{
+			PutarKanan(120);
+			wait(0.1);
+			if(ApiTengah()==1){
+				break;
+			}
+
+		}
+
+	}
+	QuickStop();
+	wait(0.5);
+}
+
+void PutarApiKanan(int Nkanan, int Nkiri)
+{
+	while(ApiTengah()==0)
+	{
+		for(int i=0;i<Nkanan;i++)
+		{
+			PutarKanan(120);
+			wait(0.1);
+			if(ApiTengah()==1){
+				break;
+			}
+
+		}
+		for(int i=0;i<Nkiri;i++)
+		{
+			PutarKiri(120);
+			wait(0.1);
+			if(ApiTengah()==1){
+				break;
+			}
+
+		}
+
+	}
+	QuickStop();
+	wait(0.5);
+}
+
+void CekApiLagi()
+{
+	ENKipas = 1;
+	wait(1);
+	while(UV2.Flag==1)
+	{
+		ENKipas = 0;
+		TengokKananBawah(150);
+		TengokKiriBawah(150);
+		TengokKiriBawah(0);
+		ENKipas=1;
+		wait(0.1);
+		TengokKanan(0);
+		QuickStop();
+		wait(1);
+	}
+}
+
+
+
+//void JelajahApi() //jika ada furniture menutupi lilin
+//{
+//
+//	if(Posisi==R1){
+//		if(Pintu==MasukR1A){
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKanan(200);
+//				wait(0.1);
+//			}while(ARAH!=TIMUR);
+//			QuickStop();
+//			wait(0.1);
+//			for(int i=0;i<15;i++){
+//				wallKanan(16,45,25);
+//				wait(0.1);
+//			}
+//			do{
+//				wallKanan(16,45,25);
+//				wait(0.1);
+//			}while(JarakDepan>=45&&ApiSekitar(50)==0);
+//			PutarApiKanan(10,35);
+//			do{
+//				ENKipas=0;
+//				wait(1);
+//				if(UV2.Flag==0){
+//					CekApiLagi();
+//				}
+//				wait(1);
+//			}while(UV2.Flag==1);
+//			ENKipas=1;
+//			LEDPadamkanApi = 0;
+//			QuickStop();
+//			wait(0.5);
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKiri(200);
+//				wait(0.1);
+//			}while(ARAH!=BARAT);
+//			PutarKiri(100);
+//			wait(0.5);
+//			QuickStop();
+//			wait(0.5);
+//			do{
+//				wallKiri(17,45,25);
+//				wait(0.1);
+//			}while(GarisBelakang==HITAM);
+//		}
+//		else{//MasukR1B
+//			MajuLurus(35);
+//			wait(0.8);
+//			QuickStop();
+//			wait(0.1);
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				wallKanan3(16,45,25);
+//				wait(0.1);
+//			}while(ARAH!=TIMUR&&ApiSekitar(50)==0);
+//
+//			if(ARAH==TIMUR){
+//				do{
+//					GetArah(KompasToleransiKecil);
+//					wallKanan3(16,45,25);
+//					wait(0.1);
+//				}while(ApiSekitar2(50)==0&&JarakDepan>45);
+//				QuickStop();
+//				if(ApiSekitar2(50)==1){
+//					PutarApiKanan(15,45);
+//				}
+//				else{
+//					PutarKanan(280);
+//					wait(0.7);
+//					QuickStop();
+//					wait(0.1);
+//					do{//depan sudah dekat
+//						GetArah(KompasToleransiKecil);
+//						PutarKiri(220);
+//						wait(0.1);
+//					}while(ApiTengah()==0);
+//				}
+//				QuickStop();
+//				do{
+//					ENKipas=0;
+//					wait(1);
+//					if(UV2.Flag==0){
+//						CekApiLagi();
+//					}
+//					wait(1);
+//				}while(UV2.Flag==1);
+//				ENKipas=1;
+//				QuickStop();
+//				wait(0.1);
+//				LEDPadamkanApi = 0;
+//				do{
+//					GetArah(KompasToleransiKecil);
+//					PutarKiri(150);
+//					wait(0.1);
+//				}while(ARAH!=BARAT);
+//				QuickStop();
+//				wait(0.5);
+//				do{
+//					wallKiri2(16,45,25);
+//					wait(0.1);
+//				}while(GarisBelakang==HITAM);
+//				QuickStop();
+//				wait(0.1);
+//
+//			}else{
+////				ketemu api
+//				PutarApiKanan(15,35);
+//				do{
+//					ENKipas=0;
+//					wait(1);
+//					if(UV2.Flag==0){
+//						CekApiLagi();
+//					}
+//					wait(1);
+//				}while(UV2.Flag==1);
+//				ENKipas=1;
+//				QuickStop();
+//				wait(0.1);
+//				LEDPadamkanApi = 0;
+//				do{
+//					GetArah(KompasToleransiKecil);
+//					PutarKiri(140);
+//					wait(0.1);
+//				}while(ARAH!=BARAT);
+//				QuickStop();
+//				wait(0.5);
+//				do{
+//					GeserKiri(40);
+//					wait(0.1);
+//				}while(JarakKanan>15);
+//				//
+//				do{
+//					wallKanan(18,45,25);
+//					wait(0.1);
+//				}while(GarisBelakang==HITAM);
+//				QuickStop();
+//				wait(0.1);
+//			}
+//
+//		}
+//	}
+//	if(Posisi==R3||Posisi==R2){
+//		if(Posisi==R3){
+//		GeserKanan(40);
+//		wait(0.4);
+//		QuickStop();
+//		wait(0.1);
+//		PutarKiri(150);
+//		wait(0.2);
+//		QuickStop();
+//		wait(0.1);
+//		}
+//		MajuLurus(30);
+//		wait(0.6);
+//
+//		if(Posisi==R3){
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				wallKanan3(16,45,25);
+//				wait(0.1);
+//			}while(ApiSekitar(50)==0&&ARAH!=BARAT);
+//			QuickStop();
+//			wait(0.1);
+//			GetArah(KompasToleransiKecil);
+//			if(ARAH==BARAT){
+//				PutarKanan(250);
+//				wait(0.3);
+//			}
+//		}
+//
+//		else if(Posisi==R2){
+//			//wallkiri aja
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKiri(180);
+//				wait(0.1);
+//			}while(ARAH!=BARAT);
+//			QuickStop();
+//			wait(0.1);
+//
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				wallKiri(17,45,20);
+//				wait(0.1);
+//			}while(ApiSekitar(55)==0&&ARAH!=TIMUR);
+//			QuickStop();
+//			wait(0.1);
+//			}
+//			PutarApi(10,40);
+//			do{
+//				ENKipas=0;
+//				wait(1);
+//				if(UV2.Flag == 0){
+//					CekApiLagi();
+//				}
+//				wait(1);
+//			}while(UV2.Flag==1);
+//			ENKipas=1;
+//			LEDPadamkanApi = 0;
+//			QuickStop();
+//			wait(0.5);
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKanan(110);
+//				wait(0.1);
+//			}while(ARAH!=SELATAN);
+//			QuickStop();
+//			wait(0.5);
+//			if(JarakDepan>13){
+//				do{
+//					MajuLurus(30);
+//					wait(0.1);
+//				}while(JarakDepan>13);
+//			}
+//
+//
+//
+////			//wallkanan?
+////			PutarKiri(230);
+////			wait(0.9);
+////			QuickStop();
+////			wait(0.1);
+////			MajuLurus(35);
+////			wait(0.2);
+////			do{
+////				GetArah(KompasToleransiKecil);
+////				wallKanan3(18,45,25);
+////				wait(0.1);
+////			}while(ApiSekitar(50)==0&&ARAH!=BARAT);
+////			QuickStop();
+////			wait(0.1);
+////			GetArah(KompasToleransiKecil);
+////			if(ARAH==BARAT){
+////				PutarKanan(250);
+////				wait(0.5);
+////			}
+////
+////		}
+////		PutarApiKanan(10,40);
+////		do{
+////			ENKipas=0;
+////			wait(1);
+////			if(UV2.Flag == 0){
+////				CekApiLagi();
+////			}
+////			wait(1);
+////		}while(UV2.Flag==1);
+////		ENKipas=1;
+////		LEDPadamkanApi = 0;
+////		QuickStop();
+////		wait(0.5);
+////		do{
+////			GetArah(KompasToleransiKecil);
+////			PutarKanan(150);
+////			wait(0.1);
+////		}while(ARAH!=SELATAN);
+////		QuickStop();
+////		wait(0.5);
+////		PutarKiri(250);
+////		wait(0.3);
+////		QuickStop();
+////		wait(0.5);
+//		if(Posisi==R3){
+//			do{
+//				wallKiri2(16,45,25);
+//				wait(0.1);
+//			}while(GarisBelakang==HITAM);
+//
+//		}
+//		else if(Posisi==R2){
+//			do{
+//				wallKiri2(16,45,20);
+//				wait(0.1);
+//			}while(GarisBelakang==HITAM);
+//
+//		}
+//	}
+//}
+
+//void PadamkanApiR3(){
+//	LEDPadamkanApi = 1;
+//	GeserKanan(40);
+//	wait(0.2);
+//	QuickStop();
+//	PutarKiri(250);
+//	wait(0.5);
+//	QuickStop();
+//	wait(0.5);
+//	do{
+//		GetArah(KompasToleransiKecil);
+//		PutarKanan(120);
+//		wait(0.1);
+//	}while(ApiTengah()==0&&ARAH!=TIMUR);
+//	QuickStop();
+//	wait(0.1);
+//	GetArah(KompasToleransiKecil);
+//	if(ARAH!=TIMUR){
+//		PutarKiri(130);
+//		wait(0.1);
+//		QuickStop();
+//		do{
+//			ENKipas=0;
+//			wait(1);
+//			if(UV2.Flag==0){
+//				CekApiLagi();
+//			}
+//			wait(1);
+//		}while(UV2.Flag==1);
+//		ENKipas=1;
+//		QuickStop();
+//		wait(2);
+//		LEDPadamkanApi = 0;
+//		do{
+//			PutarKanan(150);
+//			wait(0.4);
+//			GetArah(KompasToleransiKecil);
+//		}while(ARAH!=SELATAN);
+//
+//		do{
+//			wallKanan(18,45,20);
+//			wait(0.1);
+//		}while(GarisBelakang==HITAM);
+//
+//	}
+//	else{
+//		JelajahApi();
+//	}
+//	QuickStop();
+//	wait(0.1);
+//	Pintu=KeluarR3;
+//	Mode =BACKHOME;
+//}
+
+//void PadamkanApiR2(){
+//	LEDPadamkanApi = 1;
+//	GeserKiri(40);
+//	wait(0.4);
+//	QuickStop();
+//	wait(0.3);
+//	PutarKiri(210);
+//	wait(0.5);
+//	QuickStop();
+//	do{
+//		PutarKanan(100);
+//		wait(0.1);
+//		GetArah(KompasToleransiKecil);
+//	}while(ApiTengah()==0&&ARAH!=UTARA);
+//	QuickStop();
+//	wait(0.5);
+//	GetArah(KompasToleransiKecil);
+//	if(ARAH!=UTARA)
+//	{
+//		PutarKiri(120);
+//		wait(0.1);
+//		QuickStop();
+//		do{
+//			ENKipas=0;
+//			wait(1);
+//			if(UV2.Flag==0){
+//				CekApiLagi();
+//			}
+//			wait(1);
+//		}while(UV2.Flag==1);
+//		ENKipas=1;
+//		QuickStop();
+//		LEDPadamkanApi = 0;
+//		do{
+//			GetArah(KompasToleransiKecil);
+//			PutarKanan(100);
+//			wait(0.1);
+//		}while(ARAH!=TIMUR);
+//
+//		do{
+//			wallKanan(18,45,20);
+//			wait(0.1);
+//		}while(GarisBelakang==HITAM);
+//
+//	}
+//	else{
+//		JelajahApi();
+//	}
+//	QuickStop();
+//	wait(0.5);
+//	Pintu=KeluarR2;
+//	Mode =BACKHOME;
+//}
+
+//void PadamkanApiR1(){
+////        	cari pintunya di bagian mana
+//	LEDPadamkanApi = 1;
+//	UpdatePintu();
+//	wait(0.1);
+//	if(Pintu==MasukR1A)
+//	{
+////            	jika kondisi di pintu Masuk R1 A
+//		PutarKanan(280);
+//		wait(0.4);
+//		do{
+//			GetArah(KompasToleransiKecil);
+//			PutarKiri(100);
+//			wait(0.1);
+//		}while(ApiTengah()==0&&ARAH!=BARAT);
+//		QuickStop();
+//		wait(0.1);
+//		GetArah(KompasToleransiKecil);
+//		if(ARAH!=BARAT){
+////			menemukan api
+//			PutarKanan(100);
+//			wait(0.1);
+//			QuickStop();
+//			do{
+//				ENKipas=0;
+//				wait(1);
+//				if (UV2.Flag == 0) {
+//					CekApiLagi();;
+//				}
+//				wait(1);
+//			}while(UV2.Flag==1);
+//			ENKipas=1;
+//			QuickStop();
+//			wait(2);
+//			LEDPadamkanApi = 0;
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKanan(150);
+//				wait(0.1);
+//			}while(ARAH!=BARAT);
+//			QuickStop();
+//			wait(0.5);
+//			do{
+//				wallKiri2(18,45,20);
+//				wait(0.1);
+//			}while(GarisBelakang==HITAM);
+//
+//		}
+//		else {
+////			ga nemu apinya
+//			JelajahApi();
+//		}
+//		QuickStop();
+//		wait(0.5);
+//		Mode = BACKHOME;
+//		Pintu = KeluarR1A;
+//	}
+//	else
+////		kalo ga nemu, paksa ke R1B
+//	{
+////            	jika masuk dari pintu 1B
+//		PutarKiri(280);
+//		wait(0.3);
+//		do{
+//			PutarKanan(110);
+//			wait(0.1);
+//			GetArah(KompasToleransiKecil);
+////					ulangi hingga ketemu api atau tidak ketemu samsek
+//		}while(ApiTengah()==0&& ARAH!=SELATAN);
+////				jika ga nemu, lanjut dekati lilin dgn wallkanan
+//		GetArah(KompasToleransiKecil);
+//		if(ApiTengah()==0)
+//		{
+//			JelajahApi();
+//		}
+//		else {
+////					api ditemukan dari titik awal pada ruangan
+//			QuickStop();
+//			wait(0.1);
+////					matikan api
+//			do{
+//				ENKipas=0;
+//				wait(1);
+//				if(UV2.Flag==0){
+//					CekApiLagi();
+//				}
+//				wait(1);
+//			}while(UV2.Flag==1);
+//			ENKipas=1;
+//			QuickStop();
+//			wait(2);
+//			LEDPadamkanApi = 0;
+//
+//			do{
+//				GetArah(KompasToleransiKecil);
+//				PutarKiri(200);
+//				wait(0.1);
+//			}while(ARAH!=BARAT);
+//			QuickStop();
+//			wait(0.3);
+//			PutarKanan(250);
+//			wait(0.2);
+//			QuickStop();
+//			do{	wallKanan(18,45,20);
+//				wait(0.1);
+//			}while(GarisBelakang==HITAM);
+//			QuickStop();
+//			wait(0.5);
+//
+//		}
+//		Pintu = KeluarR1B;
+//		Mode = BACKHOME;
+//	}
+//}
+
+//void PadamkanApiR4(){
+//	LEDPadamkanApi = 1;
+//	QuickStop();
+//	wait(0.1);
+//	GetArah(KompasToleransiBesar);
+//	if(ARAH==UTARA){
+//		Pintu=MasukR4A;
+//	}
+//	else{
+//		Pintu=MasukR4B;
+//	}
+//	if(Pintu==MasukR4A){
+//		do{
+//			wallKiri(17,45,20);
+//			wait(0.1);
+//		}while(JarakDepan>13);
+//		QuickStop();
+//		wait(0.1);
+//
+//	}
+//	else{//r1B
+//		do {
+//			wallKiri(17,45,20);
+//			wait(0.1);
+//		} while (JarakDepan>15);
+//		QuickStop();
+//		wait(0.1);
+//		PutarKiri(200);
+//		wait(1);
+//
+//	}
+//	do{
+//		PutarKanan(110);
+//		wait(0.1);
+//	}while(ApiTengah()==0);
+//	if(Pintu==MasukR4A){
+//		MajuLurus(35);
+//		wait(1);
+//		PutarApi(5,25);
+//	}
+//	QuickStop();
+//	wait(0.1);
+//	do{
+//		ENKipas=0;
+//		wait(1);
+//		if(UV2.Flag==0){
+//			CekApiLagi();
+//		}
+//		wait(1);
+//	}while(UV2.Flag==1);
+//	ENKipas=1;
+//	QuickStop();
+//	LEDPadamkanApi = 0;
+//	QuickStop();
+//	wait(0.1);
+//	if(Pintu==MasukR4A){
+//		do{
+//			PutarKiri(50);
+//			wait(0.1);
+//			GetArah(80);
+//		}while(ARAH!=UTARA);
+//		QuickStop();
+//		wait(0.1);
+//
+////		PutarKanan(200);
+////		wait(0.2);
+//		do{
+//			MajuLurus(30);
+//			wait(0.1);
+//		}while(JarakDepan>15);
+//		QuickStop();
+//		wait(0.1);
+//
+//		do{
+//			wallKanan(20,45,20);
+//			wait(0.1);
+//		}while (GarisBelakang==HITAM);
+//		QuickStop();
+//		wait(0.1);
+//
+//		if(kompas.readBearing()<THSelatan-50){
+//			do{
+//				PutarKiri(30);
+//				GetArah(70);
+//			}while(ARAH!=SELATAN);
+//		}
+//		else if(kompas.readBearing()>THSelatan+50){
+//			do{
+//				PutarKanan(30);
+//				GetArah(70);
+//			}while(ARAH!=SELATAN);
+//		}
+//
+//		DisplayBACKHOME();
+//		wait(0.1);
+//		R4AtoHome();
+//	}
+//	else if(Pintu==MasukR4B){
+//		do{
+//			GetArah(80);
+//			PutarKanan(50);
+//			wait(0.1);
+//		}while(ARAH!=UTARA);
+////		PutarKiri(200);
+////		wait(0.8);
+//		QuickStop();
+//		wait(0.1);
+//		do{
+//			GeserKanan(40);
+//			wait(0.1);
+//		}while(JarakKanan<20);
+//		do {
+//			MajuLurus(30);
+//			wait(0.1);
+//		} while (GarisBelakang==HITAM);
+//		QuickStop();
+//		wait(0.1);
+//		if(kompas.readBearing()<THUtara-50){
+//			do{
+//				PutarKiri(40);
+//				GetArah(70);
+//			}while(ARAH!=UTARA);
+//		}
+//		else if(kompas.readBearing()>THUtara+50){
+//			do{
+//				PutarKanan(40);
+//				GetArah(70);
+//			}while(ARAH!=UTARA);
+//		}
+//		DisplayBACKHOME();
+//		wait(0.1);
+//		R4BtoHome();
+//	}
+
+
+//	QuickStop();
+//	wait(0.5);
+//	GetArah(KompasToleransiBesar);
+//	if(ARAH==UTARA){
+//		Pintu==KeluarR4B;
+//	}
+//	else{
+//		Pintu=KeluarR4A;
+//	}
+//	QuickStop();
+//	wait(0.1);
+//	Mode =BACKHOME;
+//}
+
+//void PadamkanApi()
+//{
+//	LEDPadamkanApi = 1;
+//    switch(Posisi){
+//        case R3:
+//            PadamkanApiR3();
+//            break;
+//
+//        case R2:
+//        	PadamkanApiR2();
+//			break;
+//
+//        case R1:
+//        	PadamkanApiR1();
+//            break;
+//
+//        case R4:
+//        	PadamkanApiR4();
+//            break;
+//        default:
+//        	PadamkanApiR1();
+//        	break;
+//
+//    }
+//}
+void PadamkanApi() {
+	DisplayLCD("PadamkanApi");
+	LEDPadamkanApi = 1;
+	switch (pintu.back()) {
+	case MasukR1A:
+		PadamkanApiR1A(); break;
+	case MasukR1B:
+		PadamkanApiR1B(); break;
+	case MasukR2:
+		PadamkanApiR2(); break;
+	case MasukR3:
+		PadamkanApiR3(); break;
+	case MasukR4A:
+		PadamkanApiR4A(); break;
+	case MasukR4B:
+		PadamkanApiR4B(); break;
+	}
+}
+
+void PadamkanApiR1A() {
+	DisplayLCD("Wall s.d. Api");
+	do {
+		wallKananApi(11,25,10);
+		wait(0.1);
+	} while (!ApiSekitar(70));
+	DisplayLCD("sekitar api");
+	QuickStop();
+	wait(2);
+
+	DisplayLCD("mendekati api");
+	wallKananApi(11,25,10);//mendekati api
+	wait(0.1);
+	QuickStop();
+
+	putarkeApi(130);//putar ke arah api
+	QuickStop();
+	wait(0.1);
+
+	ENKipas = 1;
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
+
+void PadamkanApiR1B() {
+	DisplayLCD("Wall s.d. Api");
+	PutarSampaiArah(BARAT);
+	do {
+		GeserKiri(30);
+		wait(0.1);
+	} while (JarakKiri > 8);
+
+	if (!ApiSekitar(70)) {
+		PutarSampaiArah(UTARA);
+		MajuLurus(40);
+		wait(1.2);
+
+		do {
+			wallKananApi(11,25,10);
+			wait(0.1);
+		} while (!ApiSekitar(75));
+		DisplayLCD("sekitar api");
+		QuickStop();
+		wait(2);
+
+		DisplayLCD("mendekati api");
+		wallKananApi(11,25,10);//mendekati api
+		wait(0.1);
+		QuickStop();
+	}
+
+	putarkeApiCoba(130);//putar ke arah api
+	QuickStop();
+	wait(0.1);
+
+	DisplayLCD("TIUP LILINNYA");
+	ENKipas = 1;
+    SetGlobalSpeed(100);
+    SetTravelSpeed(9);
+	TengokKanan(100);
+	wait(0.7);
+	TengokKiri(100);
+	wait(0.7);
+	HadapNormal();
+
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
+
+void PadamkanApiR2() {
+	DisplayLCD("Wall s.d. Api");
+	PutarSampaiArahIR(TIMUR);
+	MajuLurus(40);
+	wait(1.1);
+
+	do {
+		wallKiriApi(11,25,10);
+		wait(0.1);
+	} while (!ApiSekitar(70));
+	DisplayLCD("sekitar api");
+	QuickStop();
+	wait(2);
+
+	DisplayLCD("mendekati api");
+	wallKiriApi(11,25,10);//mendekati api
+	wait(0.1);
+	QuickStop();
+
+	putarkeApi(150);//putar ke arah api
+	QuickStop();
+	wait(0.1);
+
+	ENKipas = 1;
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
+
+void PadamkanApiR3() {
+	DisplayLCD("Wall s.d. Api");
+	PutarSampaiArah(SELATAN);
+	do {
+		GeserKiri(30);
+		wait(0.1);
+	} while (JarakKiri > 8);
+	do {
+		wallKiriApi(11,25,10);
+		wait(0.1);
+	} while (!ApiSekitar(70));
+	DisplayLCD("sekitar api");
+	QuickStop();
+	wait(2);
+
+	DisplayLCD("mendekati api");
+	wallKiriApi(11,25,10);//mendekati api
+	wait(0.1);
+	QuickStop();
+
+	putarkeApi(130);//putar ke arah api
+	QuickStop();
+	wait(0.1);
+
+	ENKipas = 1;
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
+
+void PadamkanApiR4A() {
+	// Hadap ke api
+	while (!ApiSekitarTengah(70)) {
+		PutarKiri(40);
+		wait(0.1);
+	}
+
+	// Bergerak pelan-pelan menuju api
+	while (!ApiSekitarTengah(120)) {
+		int t_tengah = NilaiApiTengah();
+		int t_kiri = NilaiApiKiri();
+		int t_kanan = NilaiApiKanan();
+
+		if (t_tengah > t_kiri && t_tengah > t_kanan) {
+			MajuLurus(25);
+		} else if (t_kiri > t_tengah && t_kiri > t_kanan) {
+			PutarKanan(30);
+		} else {
+			PutarKiri(30);
+		}
+		wait(0.1);
+	}
+
+	ENKipas = 1;
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
+
+void PadamkanApiR4B() {
+	// Hadap ke api
+	while (!ApiSekitarTengah(70)) {
+		PutarKanan(40);
+		wait(0.1);
+	}
+
+	// Bergerak pelan-pelan menuju api
+	while (!ApiSekitarTengah(120)) {
+		int t_tengah = NilaiApiTengah();
+		int t_kiri = NilaiApiKiri();
+		int t_kanan = NilaiApiKanan();
+
+		if (t_tengah > t_kiri && t_tengah > t_kanan) {
+			MajuLurus(25);
+		} else if (t_kiri > t_tengah && t_kiri > t_kanan) {
+			PutarKanan(30);
+		} else {
+			PutarKiri(30);
+		}
+		wait(0.1);
+	}
+
+	ENKipas = 1;
+	while (UV2.Flag == 1)
+		;
+	ENKipas = 0;
+	LEDPadamkanApi=0;
+	QuickStop();
+}
