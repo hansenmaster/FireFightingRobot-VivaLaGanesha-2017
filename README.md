@@ -1,6 +1,6 @@
-- 👋 Hi, I’m @hansenmaster
-- 👀 I’m interested in Robotic, Computer Vision
-- 🌱 I’m currently learning Agricultural Robot Application
+- Institut Teknologi Bandung, Firefighting Robotic Team 2017
+- Competing in Kontes Robot Indonesia 2017
+- OOP Based Mbed STM32 Nucleo codes for algorithm and sensors fusion
 
 
 <!---
