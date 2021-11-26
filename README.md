@@ -1,6 +1,7 @@
 - Institut Teknologi Bandung, Firefighting Robotic Team 2017
 - Competing in Kontes Robot Indonesia 2017
-- OOP Based Mbed STM32 Nucleo codes for algorithm and sensors fusion
+- OOP Based Mbed STM32F446 Nucleo codes for algorithm and sensors fusion
+- Applying Inverse Kinematics for 18 DoF Dynamixel Servo, sensors input (ADC, I2C, Digital) on Timer callback function
 
 
 <!---
